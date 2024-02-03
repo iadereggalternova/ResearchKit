@@ -177,7 +177,11 @@ static const NSTimeInterval DelayBeforeAutoScroll = 0.25;
             _tableView.delegate = self;
             _tableView.dataSource = self;
             _tableView.clipsToBounds = YES;
-            
+
+            // My code iaderegg
+            _tableView.translatesAutoresizingMaskIntoConstraints = NO;
+            _tableContainer.translatesAutoresizingMaskIntoConstraints = NO;
+
             _navigationFooterView = _tableContainer.navigationFooterView;
             [self setNavigationFooterButtonItems];
             
